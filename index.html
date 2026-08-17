@@ -390,6 +390,49 @@
         text-align: center;
     }
 }
+.quote-section {
+  padding: 70px 8%;
+  background: #f5f7fa;
+}
+
+.quote-form {
+  max-width: 700px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d6dce5;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.quote-form textarea {
+  resize: vertical;
+}
+
+.quote-form button {
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #25D366;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.quote-form button:hover {
+  opacity: 0.9;
+}
 </style>
 </head>
 
@@ -501,6 +544,38 @@
         Assistance with the documentation required to facilitate smooth goods clearance.
       </p>
     </div>
+
+  </div>
+</section>
+<section id="quote" class="quote-section">
+  <div class="section-title">
+    <h2>Request a Quote</h2>
+    <p>Tell us what you need and we'll get back to you.</p>
+  </div>
+
+  <div class="quote-form">
+
+    <input type="text" id="quoteName" placeholder="Your Name" required>
+
+    <input type="tel" id="quotePhone" placeholder="Phone / WhatsApp Number" required>
+
+    <input type="email" id="quoteEmail" placeholder="Email Address">
+
+    <select id="quoteService" required>
+      <option value="">Select a Service</option>
+      <option value="Logistics">Logistics</option>
+      <option value="Clearing">Clearing</option>
+      <option value="Forwarding">Forwarding</option>
+      <option value="Freight Services">Freight Services</option>
+      <option value="Import & Export">Import & Export</option>
+      <option value="Customs Documentation">Customs Documentation</option>
+    </select>
+
+    <textarea id="quoteMessage" placeholder="Tell us about your shipment or request" rows="5" required></textarea>
+
+    <button type="button" onclick="sendQuoteToWhatsApp()">
+      💬 Request Quote on WhatsApp
+    </button>
 
   </div>
 </section>
@@ -662,6 +737,34 @@
     19 Bida Road, Onitsha
   </p>
 </footer>
+<script>
+function sendQuoteToWhatsApp() {
+  const name = document.getElementById("quoteName").value.trim();
+  const phone = document.getElementById("quotePhone").value.trim();
+  const email = document.getElementById("quoteEmail").value.trim();
+  const service = document.getElementById("quoteService").value;
+  const message = document.getElementById("quoteMessage").value.trim();
 
+  if (!name || !phone || !service || !message) {
+    alert("Please fill in your name, phone number, service and message.");
+    return;
+  }
+
+  const whatsappMessage =
+    `Hello OKOTU LOGISTICS,\n\n` +
+    `I would like to request a quote.\n\n` +
+    `Name: ${name}\n` +
+    `Phone/WhatsApp: ${phone}\n` +
+    `Email: ${email || "Not provided"}\n` +
+    `Service: ${service}\n\n` +
+    `Request: ${message}`;
+
+  const whatsappURL =
+    "https://wa.me/2347045483375?text=" +
+    encodeURIComponent(whatsappMessage);
+
+  window.open(whatsappURL, "_blank");
+}
+</script>
 </body>
 </html>
