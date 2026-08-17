@@ -342,6 +342,48 @@
     padding: 7px 10px;
   }
 }
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+}
+
+.email-btn {
+    background: #071a3d;
+    color: white;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .contact-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-btn {
+        text-align: center;
+    }
+}
 </style>
 </head>
 
@@ -575,6 +617,16 @@
         💬 <strong>WhatsApp:</strong><br>
         <a href="https://wa.me/2347045483375" target="_blank">
           +234 704 548 3375
+        </a>
+      </div>
+
+      <div class="contact-buttons">
+        <a href="https://wa.me/2347045483375" target="_blank" class="contact-btn whatsapp-btn">
+          💬 Chat on WhatsApp
+        </a>
+
+        <a href="mailto:Okotulogistics@gmail.com" class="contact-btn email-btn">
+          📧 Send us an Email
         </a>
       </div>
 
