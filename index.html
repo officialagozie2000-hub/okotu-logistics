@@ -307,6 +307,41 @@
         align-items: flex-start;
     }
 }
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 18px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  background: #f5a623;
+  color: #071a3d;
+}
+
+@media (max-width: 600px) {
+  .main-nav {
+    gap: 8px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+}
 </style>
 </head>
 
