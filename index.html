@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>OKOTU LOGISTICS | Logistics, Clearing & Forwarding</title>
+
+  <meta name="description" content="OKOTU LOGISTICS - Professional logistics, clearing and forwarding services.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #071a3d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo-text {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-size: 13px;
+      color: #f5a623;
+      margin-top: 4px;
+    }
+
+    .hero {
+      min-height: 520px;
+      padding: 70px 22px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #071a3d, #0d3978);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #f5a623;
+    }
+
+    .hero p {
+      font-size: 17px;
+      margin-bottom: 30px;
+      color: #e8edf7;
+    }
+
+    .button {
+      display: inline-block;
+      background: #f5a623;
+      color: #071a3d;
+      padding: 14px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      font-size: 30px;
+      color: #071a3d;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: #687386;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 28px 20px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    }
+
+    .service-icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      color: #071a3d;
+      margin-bottom: 10px;
+    }
+
+    .why {
+      background: #071a3d;
+      color: white;
+      max-width: none;
+    }
+
+    .why-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .why .section-title h2 {
+      color: white;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .why-card {
+      background: rgba(255,255,255,0.08);
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    }
+
+    .stars {
+      color: #f5a623;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 15px;
+      color: #071a3d;
+    }
+
+    .contact {
+      background: #eef3fa;
+      max-width: none;
+    }
+
+    .contact-inner {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      margin-top: 25px;
+    }
+
+    .contact-item {
+      margin: 15px 0;
+    }
+
+    footer {
+      background: #04122d;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer span {
+      color: #f5a623;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero {
+        min-height: 500px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-text">OKOTU LOGISTICS</div>
+    <div class="tagline">LOGISTICS • CLEARING • FORWARDING</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Moving Your Goods <span>With Confidence</span></h1>
+
+      <p>
+        Reliable logistics, clearing and forwarding services
+        designed to move your goods safely and efficiently.
+      </p>
+
+      <a href="#contact" class="button">Get a Quote</a>
+      <a href="#services" class="button secondary">Our Services</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>About OKOTU LOGISTICS</h2>
+      <p>Your trusted logistics partner</p>
+    </div>
+
+    <div class="about">
+      <p>
+        OKOTU LOGISTICS provides professional logistics, clearing
+        and forwarding solutions for individuals and businesses.
+        We are committed to dependable service, efficient handling
+        and customer satisfaction.
+      </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Professional solutions for your transportation needs</p>
+    </div>
+
+    <div class="services">
+
+      <div class="service-card">
+        <div class="service-icon">🚚</div>
+        <h3>Logistics</h3>
+        <p>
+          Reliable movement and delivery of goods to their destination.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📦</div>
+        <h3>Clearing</h3>
+        <p>
+          Professional assistance with the clearing process for your goods.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🌍</div>
+        <h3>Forwarding</h3>
+        <p>
+          Efficient forwarding solutions for local and international shipments.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚢</div>
+        <h3>Freight Services</h3>
+        <p>
+          Helping businesses move goods efficiently through freight networks.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="why-inner">
+
+      <div class="section-title">
+        <h2>Why Choose Us?</h2>
+        <p>We put your goods and your satisfaction first.</p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <h3>Reliable</h3>
+          <p>We focus on dependable service and responsible handling.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>Professional</h3>
+          <p>We provide organized and customer-focused logistics solutions.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>Efficient</h3>
+          <p>We work to make the movement of your goods easier.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>Customer Focused</h3>
+          <p>Your satisfaction remains an important part of our service.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>What Our Clients Say</h2>
+      <p>Trusted by our customers</p>
+    </div>
+
+    <div class="testimonials">
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>
+          “Professional service and good communication throughout the process.”
+        </p>
+        <strong>— Happy Client</strong>
+      </div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>
+          “A reliable logistics company. I was satisfied with the service.”
+        </p>
+        <strong>— Happy Client</strong>
+      </div>
+
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>
+          “Great experience. I would recommend their services.”
+        </p>
+        <strong>— Happy Client</strong>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+
+      <div class="section-title">
+        <h2>Contact OKOTU LOGISTICS</h2>
+        <p>Let's help you move your goods.</p>
+      </div>
+
+      <div class="contact-box">
+
+        <div class="contact-item">
+          📧 <strong>Email:</strong><br>
+          Okotulogistics@gmail.com
+        </div>
+
+        <div class="contact-item">
+          📍 <strong>Main Office:</strong><br>
+          19 Bida Road, Onitsha
+        </div>
+
+        <div class="contact-item">
+          📍 <strong>Sub Office:</strong><br>
+          Building Material Market, Ogidi
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 <span>OKOTU LOGISTICS</span>. All Rights Reserved.
+    </p>
+
+    <p>Logistics • Clearing • Forwarding</p>
+  </footer>
+
+</body>
+</html>
