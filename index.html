@@ -237,7 +237,76 @@
         min-height: 500px;
       }
     }
-  </style>
+  </style>.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(7, 27, 52, 0.78), rgba(7, 27, 52, 0.78)),
+        linear-gradient(135deg, #0b2948, #f47b20);
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin: 0 0 20px;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #f47b20;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.hero-btn.secondary {
+    background: white;
+    color: #0b2948;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 480px;
+        padding: 55px 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 </head>
 
 <body>
@@ -246,7 +315,17 @@
     <img src="4EAB4EAA-4F52-41C8-8822-7AE002A6021C.png" alt="OKOTU LOGISTICS Logo" class="logo-image">
 
     <div class="tagline">LOGISTICS • CLEARING • FORWARDING</div>
-</header>
+</header><section class="hero">
+    <div class="hero-content">
+        <h1>Moving Your Business Forward.</h1>
+        <p>Reliable Logistics, Clearing & Forwarding Services You Can Trust.</p>
+
+        <div class="hero-buttons">
+            <a href="#contact" class="hero-btn">Get a Quote</a>
+            <a href="#services" class="hero-btn secondary">Our Services</a>
+        </div>
+    </div>
+</section>
 
   <section class="hero">
     <div class="hero-content">
